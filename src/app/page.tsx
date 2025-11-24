@@ -71,12 +71,12 @@ export default function Home() {
             <div className="max-w-md mx-auto">
               
                  <Image
-                    src="https://images.unsplash.com/photo-1616432525043-c013741c33c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9zdGF0ZSUyMGdyb3d0aCUyMGlsbHVzdHJhdGlvbnxlbnwwfHx8fDE3NjQwMDExMzh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                    src="https://images.unsplash.com/photo-1579684453423-f84349369665?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtZWRpY2FsJTIwaWxsdXN0cmF0aW9ufGVufDB8fHx8MTc2NDAxMjgwMHww&ixlib=rb-4.1.0&q=80&w=1080"
                     alt="Medical illustration of prostate growth (benign prostatic hyperplasia)."
                     width={500}
                     height={400}
                     className="object-contain"
-                    data-ai-hint="prostate illustration"
+                    data-ai-hint="medical illustration"
                 />
               
             </div>
@@ -126,7 +126,7 @@ export default function Home() {
       <section className="py-16 lg:py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-             <div className="order-2 md:order-2">
+             <div className="order-2 md:order-1">
               <h2 className="font-headline text-3xl md:text-4xl font-semibold text-primary">
                 Complicaciones
               </h2>
@@ -141,7 +141,7 @@ export default function Home() {
                 <li className="border-b pb-2 text-muted-foreground">Retención urinaria aguda</li>
               </ul>
             </div>
-            <div className="max-w-md mx-auto order-1 md:order-1">
+            <div className="max-w-md mx-auto order-1 md:order-2">
               
                  <Image
                     src="https://images.unsplash.com/photo-1620939068789-fc0c88ddb71e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiYWNrJTIwcGFpbnxlbnwwfHx8fDE3NjQwMDExMzh8MA&ixlib=rb-4.1.0&q=80&w=1080"
@@ -176,9 +176,9 @@ export default function Home() {
 
            <div className="mt-12 grid md:grid-cols-2 gap-16 items-center text-left">
                 <div className="flex flex-col sm:flex-row items-center gap-8">
-                    <Image src="/images/c3.png" alt="Portrait of Dr. Cristan Basques." width={200} height={300} className="rounded-lg shadow-md object-cover" data-ai-hint="doctor presentation" />
+                    <Image src="/images/c3.png" alt="Portrait of Dr. Christian Vázquez Niño." width={200} height={300} className="rounded-lg shadow-md object-cover" data-ai-hint="doctor presentation" />
                     <div>
-                        <h3 className="font-headline text-2xl font-semibold text-primary">Dr. Cristan Basques</h3>
+                        <h3 className="font-headline text-2xl font-semibold text-primary">Dr. Christian Vázquez Niño</h3>
                          <ul className="mt-4 space-y-2 text-muted-foreground list-disc list-inside">
                             <li>Cirujano Urólogo formado por la Universidad Nacional Autónoma de México (UNAM).</li>
                             <li>Certificación vigente del Consejo Mexicano de Urología.</li>
@@ -331,3 +331,6 @@ export default function Home() {
 
     
 
+
+
+    
