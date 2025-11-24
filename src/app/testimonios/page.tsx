@@ -2,12 +2,27 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { testimonials } from '@/lib/data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+
 
 export const metadata: Metadata = {
   title: 'Testimonios de Pacientes',
   description: 'Lea las historias y experiencias de pacientes que confiaron en nuestra clínica para su cirugía de próstata en CDMX.',
   keywords: ['testimonios urología', 'opiniones cirugía próstata', 'pacientes satisfechos', 'clínica próstata cdmx'],
+};
+
+const TestimonialImages: Record<string, { url: string; hint: string }> = {
+    'testimonial-patient-1': {
+        url: 'https://images.unsplash.com/photo-1733400316516-904674b0d1fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYXRpZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYzOTc2MTkxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        hint: 'patient portrait'
+    },
+    'testimonial-patient-2': {
+        url: 'https://images.unsplash.com/photo-1654823520592-ac35df78f018?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwYXRpZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYzOTc2MTkxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        hint: 'patient portrait'
+    },
+    'testimonial-patient-3': {
+        url: 'https://images.unsplash.com/photo-1598581681233-eee2272ddc41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwYXRpZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYzOTc2MTkxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        hint: 'patient portrait'
+    }
 };
 
 export default function TestimonialsPage() {
@@ -26,18 +41,18 @@ export default function TestimonialsPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => {
-              const patientImage = PlaceHolderImages.find(p => p.id === testimonial.image);
+              const patientImage = TestimonialImages[testimonial.image];
               return (
                 <Card key={index} className="flex flex-col text-center items-center">
                   <CardHeader>
                     {patientImage && (
                       <Image
-                        src={patientImage.imageUrl}
+                        src={patientImage.url}
                         alt={testimonial.name}
                         width={100}
                         height={100}
                         className="rounded-full mx-auto"
-                        data-ai-hint={patientImage.imageHint}
+                        data-ai-hint={patientImage.hint}
                       />
                     )}
                   </CardHeader>

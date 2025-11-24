@@ -5,7 +5,7 @@ import Link from 'next/link';
 import ContactForm from '@/components/contact-form';
 import Map from '@/components/map';
 import { contactInfo } from '@/lib/data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+
 
 export const metadata: Metadata = {
   title: 'Contacto y Agendar Cita',
@@ -14,20 +14,19 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  const contactHeaderImage = PlaceHolderImages.find(p => p.id === 'contact-header');
 
   return (
     <>
       <section className="relative py-20 md:py-32 bg-primary/10">
-        {contactHeaderImage && (
+        
              <Image
-                src={contactHeaderImage.imageUrl}
-                alt={contactHeaderImage.description}
+                src="https://images.unsplash.com/photo-1633111158162-a4835dce7d0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjbGluaWMlMjByZWNlcHRpb258ZW58MHx8fHwxNzYzOTk5MTAxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="A friendly receptionist at a clinic."
                 fill
                 className="object-cover"
-                data-ai-hint={contactHeaderImage.imageHint}
+                data-ai-hint="clinic reception"
             />
-        )}
+        
         <div className="absolute inset-0 bg-primary/70" />
         <div className="container relative z-10 mx-auto px-4 text-center text-primary-foreground">
           <h1 className="font-headline text-4xl md:text-5xl font-bold">Póngase en Contacto</h1>

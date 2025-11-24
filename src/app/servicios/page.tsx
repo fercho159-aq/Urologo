@@ -2,12 +2,27 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { services } from '@/lib/data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+
 
 export const metadata: Metadata = {
   title: 'Servicios de Urología y Cirugía de Próstata',
   description: 'Conozca nuestros servicios especializados, incluyendo RTUP, prostatectomía radical, terapia láser GreenLight y consultas urológicas en CDMX.',
   keywords: ['servicios urología', 'RTUP México', 'prostatectomía radical cdmx', 'terapia greenlight', 'cirugía próstata méxico'],
+};
+
+const ServiceImages: Record<string, { url: string; hint: string }> = {
+    'service-resection': {
+        url: 'https://images.unsplash.com/photo-1518152006812-edab29b069ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZWRpY2FsJTIwZXF1aXBtZW50fGVufDB8fHx8MTc2Mzk0NjM3Nnww&ixlib=rb-4.1.0&q=80&w=1080',
+        hint: 'medical equipment'
+    },
+    'service-prostatectomy': {
+        url: 'https://images.unsplash.com/photo-1551601651-3c989866fe70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdXJnZW9uJTIwb3BlcmF0aW9ufGVufDB8fHx8MTc2NDAxMjIyM3ww&ixlib=rb-4.1.0&q=80&w=1080',
+        hint: 'surgeon operation'
+    },
+    'service-greenlight': {
+        url: 'https://images.unsplash.com/photo-1754941622136-6664a3f50b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsYXNlciUyMHRoZXJhcHl8ZW58MHx8fHwxNzY0MDEyMjIzfDA&ixlib=rb-4.1.0&q=80&w=1080',
+        hint: 'laser therapy'
+    }
 };
 
 export default function ServicesPage() {
@@ -26,7 +41,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <div className="space-y-16">
             {services.map((service, index) => {
-              const serviceImage = service.image ? PlaceHolderImages.find(p => p.id === service.image) : null;
+              const serviceImage = service.image ? ServiceImages[service.image] : null;
               const isReversed = index % 2 !== 0;
 
               return (
@@ -34,12 +49,12 @@ export default function ServicesPage() {
                   <div className={` ${isReversed ? 'md:order-2' : ''}`}>
                     {serviceImage && (
                         <Image
-                          src={serviceImage.imageUrl}
-                          alt={serviceImage.description}
+                          src={serviceImage.url}
+                          alt={service.title}
                           width={600}
                           height={400}
                           className="rounded-lg shadow-lg object-cover w-full aspect-video"
-                          data-ai-hint={serviceImage.imageHint}
+                          data-ai-hint={serviceImage.hint}
                         />
                     )}
                   </div>

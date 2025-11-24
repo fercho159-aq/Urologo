@@ -4,7 +4,6 @@ import type { Metadata } from 'next';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { blogPosts } from '@/lib/data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -12,6 +11,22 @@ export const metadata: Metadata = {
   description: 'Artículos educativos sobre cirugía de próstata, cuidados, tratamientos y consejos de nuestros urólogos expertos en México.',
   keywords: ['blog urología', 'salud próstata', 'consejos cirugía próstata', 'urología cdmx'],
 };
+
+const PostImages: Record<string, { url: string; hint: string }> = {
+    'blog-pre-surgery': {
+        url: 'https://images.unsplash.com/photo-1631217871099-88310a909a32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBwYXRpZW50fGVufDB8fHx8MTc2Mzk2MDgzMHww&ixlib=rb-4.1.0&q=80&w=1080',
+        hint: 'doctor patient'
+    },
+    'blog-types-surgery': {
+        url: 'https://images.unsplash.com/photo-1734094546615-045bf5f7ea0e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxvcGVyYXRpbmclMjByb29tfGVufDB8fHx8MTc2NDAwMDc2MHww&ixlib=rb-4.1.0&q=80&w=1080',
+        hint: 'operating room'
+    },
+    'blog-post-care': {
+        url: 'https://images.unsplash.com/photo-1758654860100-32cd2e83e74a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGF0aWVudCUyMHJlY292ZXJ5fGVufDB8fHx8MTc2NDAwNTA2Mnww&ixlib=rb-4.1.0&q=80&w=1080',
+        hint: 'patient recovery'
+    }
+}
+
 
 export default function BlogPage() {
   return (
@@ -29,18 +44,18 @@ export default function BlogPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => {
-              const postImage = PlaceHolderImages.find(p => p.id === post.image);
+              const postImage = PostImages[post.image];
               return (
                 <Card key={post.slug} className="overflow-hidden flex flex-col">
                   {postImage && (
                     <Link href={`/blog/${post.slug}`} aria-label={`Leer más sobre ${post.title}`}>
                       <div className="aspect-video relative">
                         <Image
-                          src={postImage.imageUrl}
+                          src={postImage.url}
                           alt={post.title}
                           fill
                           className="object-cover transition-transform duration-300 hover:scale-105"
-                          data-ai-hint={postImage.imageHint}
+                          data-ai-hint={postImage.hint}
                         />
                       </div>
                     </Link>

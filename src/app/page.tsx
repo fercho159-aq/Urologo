@@ -3,36 +3,28 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { services, testimonials, contactInfo } from '@/lib/data';
+import { testimonials, contactInfo } from '@/lib/data';
 import { ArrowRight, CircleCheckBig, Hospital, Stethoscope, Users } from 'lucide-react';
 import ContactForm from '@/components/contact-form';
 import Map from '@/components/map';
 
 export default function Home() {
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
-  const doctorImage = PlaceHolderImages.find((img) => img.id === 'doctor-portrait');
-  const growthImage = PlaceHolderImages.find((img) => img.id === 'prostate-growth');
-  const symptomsImage = PlaceHolderImages.find((img) => img.id === 'symptoms-image');
-  const complicationsImage = PlaceHolderImages.find((img) => img.id === 'complications-image');
-  const doctor1Image = PlaceHolderImages.find((img) => img.id === 'doctor-1');
-  const doctor2Image = PlaceHolderImages.find((img) => img.id === 'doctor-2');
-  const costImage = PlaceHolderImages.find((img) => img.id === 'costs-image');
+ 
 
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
       <section id="inicio" className="relative h-auto lg:h-[80vh] w-full py-16 lg:py-0">
-        {heroImage && (
+        
           <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
+            src="https://storage.googleapis.com/studioprompt/e7845f2f-a3e9-4467-b52b-4279b9a67a21.jpeg"
+            alt="An older man looking thoughtfully."
             fill
             className="object-cover"
             priority
-            data-ai-hint={heroImage.imageHint}
+            data-ai-hint="senior man"
           />
-        )}
+        
         <div className="absolute inset-0 bg-primary/80" />
         <div className="relative z-10 container mx-auto px-4 h-full grid lg:grid-cols-2 gap-8 items-center">
           <div className="text-center lg:text-left text-primary-foreground">
@@ -77,16 +69,16 @@ export default function Home() {
               </p>
             </div>
             <div className="max-w-md mx-auto">
-              {growthImage && (
+              
                  <Image
-                    src={growthImage.imageUrl}
-                    alt={growthImage.description}
+                    src="https://storage.googleapis.com/studioprompt/1912a73c-a55b-4395-9b2f-37c265b46d1b.jpeg"
+                    alt="Medical illustration of prostate growth (benign prostatic hyperplasia)."
                     width={500}
                     height={400}
                     className="object-contain"
-                    data-ai-hint={growthImage.imageHint}
+                    data-ai-hint="prostate illustration"
                 />
-              )}
+              
             </div>
           </div>
         </div>
@@ -97,16 +89,16 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="max-w-md mx-auto md:order-1">
-              {symptomsImage && (
+              
                  <Image
-                    src={symptomsImage.imageUrl}
-                    alt={symptomsImage.description}
+                    src="https://images.unsplash.com/photo-1758687127128-9535de50a3e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYW4lMjBkaXNjb21mb3J0fGVufDB8fHx8MTc2NDAwMTEzOHww&ixlib=rb-4.1.0&q=80&w=1080"
+                    alt="A man holding his lower abdomen in discomfort."
                     width={400}
                     height={500}
                     className="rounded-lg shadow-lg object-cover"
-                    data-ai-hint={symptomsImage.imageHint}
+                    data-ai-hint="man discomfort"
                 />
-              )}
+              
             </div>
             <div className="md:order-2">
               <h2 className="font-headline text-3xl md:text-4xl font-semibold text-primary">
@@ -135,16 +127,16 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="max-w-md mx-auto md:order-2">
-              {complicationsImage && (
+              
                  <Image
-                    src={complicationsImage.imageUrl}
-                    alt={complicationsImage.description}
+                    src="https://images.unsplash.com/photo-1620939068789-fc0c88ddb71e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiYWNrJTIwcGFpbnxlbnwwfHx8fDE3NjQwMDExMzh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                    alt="A person with back pain, sitting on a sofa."
                     width={400}
                     height={400}
                     className="rounded-lg shadow-lg object-cover"
-                    data-ai-hint={complicationsImage.imageHint}
+                    data-ai-hint="back pain"
                 />
-              )}
+              
             </div>
             <div className="md:order-1">
               <h2 className="font-headline text-3xl md:text-4xl font-semibold text-primary">
@@ -184,7 +176,7 @@ export default function Home() {
 
            <div className="mt-12 grid md:grid-cols-2 gap-16 items-center text-left">
                 <div className="flex flex-col sm:flex-row items-center gap-8">
-                    {doctor1Image && <Image src={doctor1Image.imageUrl} alt={doctor1Image.description} width={200} height={300} className="rounded-lg shadow-md object-cover" data-ai-hint={doctor1Image.imageHint} />}
+                    <Image src="/images/a1.jpeg" alt="Portrait of Dr. Juan Pérez Martínez." width={200} height={300} className="rounded-lg shadow-md object-cover" data-ai-hint="doctor presentation" />
                     <div>
                         <h3 className="font-headline text-2xl font-semibold text-primary">Dr. Juan Pérez Martínez</h3>
                          <ul className="mt-4 space-y-2 text-muted-foreground list-disc list-inside">
@@ -199,7 +191,7 @@ export default function Home() {
                 </div>
 
                  <div className="flex flex-col sm:flex-row items-center gap-8">
-                     {doctor2Image && <Image src={doctor2Image.imageUrl} alt={doctor2Image.description} width={200} height={300} className="rounded-lg shadow-md object-cover" data-ai-hint={doctor2Image.imageHint}/>}
+                     <Image src="https://images.unsplash.com/photo-1550831107-1553da8c8464?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkb2N0b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM5NzczNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Portrait of Dr. Carlos López." width={200} height={300} className="rounded-lg shadow-md object-cover" data-ai-hint="doctor portrait"/>
                     <div>
                         <h3 className="font-headline text-2xl font-semibold text-primary">Dr. Carlos López</h3>
                          <ul className="mt-4 space-y-2 text-muted-foreground list-disc list-inside">

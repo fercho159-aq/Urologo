@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { blogPosts } from '@/lib/data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+
 
 type BlogPostPageProps = {
   params: {
@@ -30,6 +30,22 @@ export async function generateStaticParams() {
   }));
 }
 
+const PostImages: Record<string, { url: string; hint: string }> = {
+    'blog-pre-surgery': {
+        url: 'https://images.unsplash.com/photo-1631217871099-88310a909a32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBwYXRpZW50fGVufDB8fHx8MTc2Mzk2MDgzMHww&ixlib=rb-4.1.0&q=80&w=1080',
+        hint: 'doctor patient'
+    },
+    'blog-types-surgery': {
+        url: 'https://images.unsplash.com/photo-1734094546615-045bf5f7ea0e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxvcGVyYXRpbmclMjByb29tfGVufDB8fHx8MTc2NDAwMDc2MHww&ixlib-rb-4.1.0&q=80&w=1080',
+        hint: 'operating room'
+    },
+    'blog-post-care': {
+        url: 'https://images.unsplash.com/photo-1758654860100-32cd2e83e74a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGF0aWVudCUyMHJlY292ZXJ5fGVufDB8fHx8MTc2NDAwNTA2Mnww&ixlib=rb-4.1.0&q=80&w=1080',
+        hint: 'patient recovery'
+    }
+}
+
+
 export default function BlogPostPage({ params }: BlogPostPageProps) {
   const post = blogPosts.find((p) => p.slug === params.slug);
 
@@ -37,7 +53,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     notFound();
   }
   
-  const postImage = PlaceHolderImages.find(p => p.id === post.image);
+  const postImage = PostImages[post.image];
 
   return (
     <article className="container mx-auto px-4 py-16 lg:py-24 max-w-4xl">
@@ -51,12 +67,12 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       {postImage && (
         <div className="relative aspect-video w-full mb-12 rounded-lg overflow-hidden shadow-lg">
           <Image
-            src={postImage.imageUrl}
+            src={postImage.url}
             alt={post.title}
             fill
             className="object-cover"
             priority
-            data-ai-hint={postImage.imageHint}
+            data-ai-hint={postImage.hint}
           />
         </div>
       )}
