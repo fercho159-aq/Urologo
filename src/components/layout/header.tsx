@@ -18,14 +18,14 @@ export default function Header() {
 
   return (
     <>
-    <div className="bg-background text-primary py-2 text-sm px-4">
-        <div className="container flex justify-between items-center">
+    <div className="bg-background text-primary py-2 text-sm">
+        <div className="container flex justify-between items-center px-4">
             <span>URGENCIAS 24hrs</span>
             <span>Tel. {contactInfo.phone}</span>
         </div>
     </div>
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center">
+      <div className="container flex h-20 items-center px-4">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6">
             <Logo />

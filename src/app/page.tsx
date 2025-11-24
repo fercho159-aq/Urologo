@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { services, testimonials, blogPosts, contactInfo } from '@/lib/data';
-import { ArrowRight, CheckCircle, Hospital, Stethoscope, Users } from 'lucide-react';
+import { services, testimonials, contactInfo } from '@/lib/data';
+import { ArrowRight, CircleCheckBig, Hospital, Stethoscope, Users } from 'lucide-react';
 import ContactForm from '@/components/contact-form';
 import Map from '@/components/map';
 
@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section id="inicio" className="relative h-[70vh] md:h-[80vh] w-full">
+      <section id="inicio" className="relative h-auto lg:h-[80vh] w-full py-16 lg:py-0">
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
@@ -37,24 +37,28 @@ export default function Home() {
         <div className="relative z-10 container mx-auto px-4 h-full grid lg:grid-cols-2 gap-8 items-center">
           <div className="text-center lg:text-left text-primary-foreground">
             <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold">
-              Tratamiento de Próstata Avanzado con Cirugía Urológica
+              Tratamiento de Próstata Agrandada con Cirugía Endoscópica
             </h1>
-            <p className="mt-4 text-lg md:text-xl">
-              Cirugía Láser de próstata desde $39,900
-            </p>
+            <div className="mt-6 bg-black/20 p-6 rounded-lg">
+              <p className="font-headline text-2xl md:text-3xl font-bold">
+                Paquete Todo Incluido desde $44,500.00 MXN
+              </p>
+              <p className="mt-2 text-sm">
+                Pago en efectivo, Tarjeta Débito y Transferencia Bancaria. Trabajamos con múltiples aseguradoras.
+              </p>
+            </div>
             <Button asChild size="lg" className="mt-8 bg-accent hover:bg-accent/90 text-accent-foreground">
-              <Link href="/contacto">¡Saber más!</Link>
+              <Link href="/#costos">¿Qué incluye?</Link>
             </Button>
           </div>
-          <div className="hidden lg:flex justify-center">
-            <Card className="w-full max-w-md bg-background/90">
-              <CardHeader className="text-center">
-                <CardTitle className="font-headline text-2xl text-primary">Tu bienestar es lo más importante, ¡Atiéndete a tiempo!</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ContactForm />
-              </CardContent>
-            </Card>
+          <div className="w-full max-w-md mx-auto bg-gray-200/90 p-6 rounded-lg">
+            <div className="text-center text-primary mb-4">
+              <h2 className="font-headline text-3xl font-bold">Tu bienestar es lo más importante.</h2>
+              <h3 className="font-headline text-4xl font-bold text-accent">¡Atiéndete a tiempo!</h3>
+            </div>
+            <p className="text-center text-sm text-primary font-bold">Contacto Cirugía de Próstata</p>
+            <p className="text-center text-xs text-muted-foreground mb-4">Déjanos tus datos y te contactamos lo antes posible</p>
+            <ContactForm />
           </div>
         </div>
       </section>
@@ -92,7 +96,7 @@ export default function Home() {
       <section id="sintomas" className="py-16 lg:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="max-w-md mx-auto md:order-2">
+            <div className="max-w-md mx-auto md:order-1">
               {symptomsImage && (
                  <Image
                     src={symptomsImage.imageUrl}
@@ -104,7 +108,7 @@ export default function Home() {
                 />
               )}
             </div>
-            <div>
+            <div className="md:order-2">
               <h2 className="font-headline text-3xl md:text-4xl font-semibold text-primary">
                 Síntomas
               </h2>
@@ -130,7 +134,7 @@ export default function Home() {
       <section className="py-16 lg:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="max-w-md mx-auto">
+            <div className="max-w-md mx-auto md:order-2">
               {complicationsImage && (
                  <Image
                     src={complicationsImage.imageUrl}
@@ -142,7 +146,7 @@ export default function Home() {
                 />
               )}
             </div>
-            <div>
+            <div className="md:order-1">
               <h2 className="font-headline text-3xl md:text-4xl font-semibold text-primary">
                 Complicaciones
               </h2>
@@ -241,28 +245,28 @@ export default function Home() {
                   <div className="space-y-4 text-right">
                       <div className="flex items-center justify-end gap-2">
                           <p className="text-muted-foreground">Equipo de Cirugía</p>
-                          <CheckCircle className="h-6 w-6 text-accent"/>
+                          <CircleCheckBig className="h-6 w-6 text-accent"/>
                       </div>
                        <div className="flex items-center justify-end gap-2">
                           <p className="text-muted-foreground">Anestesia</p>
-                          <CheckCircle className="h-6 w-6 text-accent"/>
+                          <CircleCheckBig className="h-6 w-6 text-accent"/>
                       </div>
                        <div className="flex items-center justify-end gap-2">
                           <p className="text-muted-foreground">Internamiento (1 día)</p>
-                          <CheckCircle className="h-6 w-6 text-accent"/>
+                          <CircleCheckBig className="h-6 w-6 text-accent"/>
                       </div>
                   </div>
                    <div className="space-y-4">
                       <div className="flex items-center gap-2">
-                          <CheckCircle className="h-6 w-6 text-accent"/>
+                          <CircleCheckBig className="h-6 w-6 text-accent"/>
                           <p className="text-muted-foreground">Equipo Médico</p>
                       </div>
                        <div className="flex items-center gap-2">
-                          <CheckCircle className="h-6 w-6 text-accent"/>
+                          <CircleCheckBig className="h-6 w-6 text-accent"/>
                           <p className="text-muted-foreground">Medicamentos</p>
                       </div>
                        <div className="flex items-center gap-2">
-                          <CheckCircle className="h-6 w-6 text-accent"/>
+                          <CircleCheckBig className="h-6 w-6 text-accent"/>
                           <p className="text-muted-foreground">Insumos</p>
                       </div>
                   </div>

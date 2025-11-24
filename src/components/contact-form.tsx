@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import {
   Form,
   FormControl,
+  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -17,14 +18,16 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { useState } from 'react';
-import { Checkbox } from './ui/checkbox';
+import { RadioGroup, RadioGroupItem } from './ui/radio-group';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'El nombre debe tener al menos 2 caracteres.' }),
   email: z.string().email({ message: 'Por favor, ingrese un correo electrónico válido.' }),
-  phone: z.string().min(10, { message: 'Por favor, ingrese un teléfono válido.' }),
-  message: z.string().min(10, { message: 'El mensaje debe tener al menos 10 caracteres.' }),
-  privacy: z.boolean().refine(val => val === true, {message: "Debe aceptar la política de privacidad."})
+  whatsapp: z.string().min(10, { message: 'Por favor, ingrese un número de WhatsApp válido.' }),
+  previousDiagnosis: z.enum(['yes', 'no'], {
+    required_error: 'Por favor, seleccione una opción.',
+  }),
+  comments: z.string().optional(),
 });
 
 export default function ContactForm() {
@@ -36,9 +39,8 @@ export default function ContactForm() {
     defaultValues: {
       name: '',
       email: '',
-      phone: '',
-      message: '',
-      privacy: false,
+      whatsapp: '',
+      comments: '',
     },
   });
 
@@ -64,21 +66,23 @@ export default function ContactForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
+              <FormLabel className="text-primary">Nombre Completo *</FormLabel>
               <FormControl>
-                <Input placeholder="Nombre Completo" {...field} />
+                <Input {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <FormField
             control={form.control}
             name="email"
             render={({ field }) => (
                 <FormItem>
+                <FormLabel className="text-primary">Correo electrónico: *</FormLabel>
                 <FormControl>
-                    <Input placeholder="Correo Electrónico" {...field} />
+                    <Input {...field} />
                 </FormControl>
                 <FormMessage />
                 </FormItem>
@@ -86,25 +90,58 @@ export default function ContactForm() {
             />
             <FormField
             control={form.control}
-            name="phone"
+            name="whatsapp"
             render={({ field }) => (
                 <FormItem>
+                <FormLabel className="text-primary">Número WhatsApp: *</FormLabel>
                 <FormControl>
-                    <Input placeholder="Teléfono" {...field} />
+                    <Input {...field} />
                 </FormControl>
                 <FormMessage />
                 </FormItem>
             )}
             />
         </div>
+
         <FormField
           control={form.control}
-          name="message"
+          name="previousDiagnosis"
+          render={({ field }) => (
+            <FormItem className="space-y-3">
+              <FormLabel className="text-primary">¿Cuentas con un diagnóstico previo? *</FormLabel>
+              <FormControl>
+                <RadioGroup
+                  onValueChange={field.onChange}
+                  defaultValue={field.value}
+                  className="flex items-center space-x-4"
+                >
+                  <FormItem className="flex items-center space-x-2 space-y-0">
+                    <FormControl>
+                      <RadioGroupItem value="yes" />
+                    </FormControl>
+                    <FormLabel className="font-normal text-sm">Sí</FormLabel>
+                  </FormItem>
+                  <FormItem className="flex items-center space-x-2 space-y-0">
+                    <FormControl>
+                      <RadioGroupItem value="no" />
+                    </FormControl>
+                    <FormLabel className="font-normal text-sm">No</FormLabel>
+                  </FormItem>
+                </RadioGroup>
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        <FormField
+          control={form.control}
+          name="comments"
           render={({ field }) => (
             <FormItem>
+              <FormLabel className="text-primary">Comentarios:</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Mensaje"
                   className="min-h-[100px]"
                   {...field}
                 />
@@ -113,23 +150,7 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        <FormField
-            control={form.control}
-            name="privacy"
-            render={({ field }) => (
-                <FormItem className="flex flex-row items-start space-x-3 space-y-0">
-                    <FormControl>
-                        <Checkbox checked={field.value} onCheckedChange={field.onChange} />
-                    </FormControl>
-                    <div className="space-y-1 leading-none">
-                        <FormLabel className="text-xs text-muted-foreground">
-                            He leído y acepto la política de privacidad.
-                        </FormLabel>
-                        <FormMessage />
-                    </div>
-                </FormItem>
-            )}
-        />
+        
 
         <Button type="submit" className="w-full bg-primary hover:bg-primary/90" disabled={isLoading}>
             {isLoading ? 'Enviando...' : 'Enviar'}
