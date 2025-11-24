@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -91,7 +92,7 @@ export default function Home() {
       <section id="sintomas" className="py-16 lg:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-             <div className="max-w-md mx-auto">
+            <div className="max-w-md mx-auto md:order-2">
               {symptomsImage && (
                  <Image
                     src={symptomsImage.imageUrl}
@@ -129,6 +130,18 @@ export default function Home() {
       <section className="py-16 lg:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="max-w-md mx-auto">
+              {complicationsImage && (
+                 <Image
+                    src={complicationsImage.imageUrl}
+                    alt={complicationsImage.description}
+                    width={400}
+                    height={400}
+                    className="rounded-lg shadow-lg object-cover"
+                    data-ai-hint={complicationsImage.imageHint}
+                />
+              )}
+            </div>
             <div>
               <h2 className="font-headline text-3xl md:text-4xl font-semibold text-primary">
                 Complicaciones
@@ -143,18 +156,6 @@ export default function Home() {
                 <li className="border-b pb-2 text-muted-foreground">Daño a los riñones</li>
                 <li className="border-b pb-2 text-muted-foreground">Retención urinaria aguda</li>
               </ul>
-            </div>
-             <div className="max-w-md mx-auto">
-              {complicationsImage && (
-                 <Image
-                    src={complicationsImage.imageUrl}
-                    alt={complicationsImage.description}
-                    width={400}
-                    height={400}
-                    className="rounded-lg shadow-lg object-cover"
-                    data-ai-hint={complicationsImage.imageHint}
-                />
-              )}
             </div>
           </div>
         </div>
