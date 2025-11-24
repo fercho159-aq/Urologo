@@ -15,7 +15,7 @@
     {
       "id": "prostate-growth",
       "description": "Medical illustration of prostate growth (benign prostatic hyperplasia).",
-      "imageUrl": "https://storage.googleapis.com/studioprompt/prostate-growth.png",
+      "imageUrl": "https://storage.googleapis.com/studioprompt/7b63795b-0447-4977-9494-11e03901b80c.jpeg",
       "imageHint": "prostate illustration"
     },
     {
@@ -33,7 +33,7 @@
     {
       "id": "doctor-1",
       "description": "Portrait of Dr. Juan Pérez Martínez.",
-      "imageUrl": "https://storage.googleapis.com/studioprompt/e8c8942b-e102-45e3-96b4-6a84c98cc332.jpeg",
+      "imageUrl": "https://storage.googleapis.com/studioprompt/5b5b9915-d4a9-4591-a1e6-341e21b719d4.jpeg",
       "imageHint": "doctor presentation"
     },
     {
@@ -47,6 +47,66 @@
       "description": "Close up on a doctor's hands during a medical procedure.",
       "imageUrl": "https://images.unsplash.com/photo-1738191360020-e03e1c8914fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwcHJvY2VkdXJlfGVufDB8fHx8MTc2NDAwMTEzOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "medical procedure"
+    },
+    {
+      "id": "testimonial-patient-1",
+      "description": "Portrait of a satisfied patient.",
+      "imageUrl": "https://images.unsplash.com/photo-1733400316516-904674b0d1fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYXRpZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYzOTc2MTkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "patient portrait"
+    },
+    {
+      "id": "testimonial-patient-2",
+      "description": "Portrait of a satisfied patient.",
+      "imageUrl": "https://images.unsplash.com/photo-1654823520592-ac35df78f018?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwYXRpZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYzOTc2MTkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "patient portrait"
+    },
+    {
+      "id": "testimonial-patient-3",
+      "description": "Portrait of a satisfied patient.",
+      "imageUrl": "https://images.unsplash.com/photo-1598581681233-eee2272ddc41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwYXRpZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYzOTc2MTkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "patient portrait"
+    },
+    {
+      "id": "blog-pre-surgery",
+      "description": "Doctor talking to a patient before surgery.",
+      "imageUrl": "https://images.unsplash.com/photo-1631217871099-88310a909a32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBwYXRpZW50fGVufDB8fHx8MTc2Mzk2MDgzMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor patient"
+    },
+    {
+      "id": "blog-types-surgery",
+      "description": "A surgeon in an operating room.",
+      "imageUrl": "https://images.unsplash.com/photo-1734094546615-045bf5f7ea0e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxvcGVyYXRpbmclMjByb29tfGVufDB8fHx8MTc2NDAwMDc2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "operating room"
+    },
+    {
+      "id": "blog-post-care",
+      "description": "A patient recovering at home.",
+      "imageUrl": "https://images.unsplash.com/photo-1758654860100-32cd2e83e74a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGF0aWVudCUyMHJlY292ZXJ5fGVufDB8fHx8MTc2NDAwNTA2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "patient recovery"
+    },
+    {
+      "id": "contact-header",
+      "description": "A friendly receptionist at a clinic.",
+      "imageUrl": "https://images.unsplash.com/photo-1633111158162-a4835dce7d0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjbGluaWMlMjByZWNlcHRpb258ZW58MHx8fHwxNzYzOTk5MTAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clinic reception"
+    },
+    {
+      "id": "service-resection",
+      "description": "Medical equipment for prostate resection.",
+      "imageUrl": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZWRpY2FsJTIwZXF1aXBtZW50fGVufDB8fHx8MTc2Mzk0NjM3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical equipment"
+    },
+    {
+      "id": "service-prostatectomy",
+      "description": "A surgeon performing a prostatectomy.",
+      "imageUrl": "https://images.unsplash.com/photo-1551601651-3c989866fe70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdXJnZW9uJTIwb3BlcmF0aW9ufGVufDB8fHx8MTc2NDAxMjIyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "surgeon operation"
+    },
+    {
+      "id": "service-greenlight",
+      "description": "Greenlight laser therapy equipment.",
+      "imageUrl": "https://images.unsplash.com/photo-1754941622136-6664a3f50b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsYXNlciUyMHRoZXJhcHl8ZW58MHx8fHwxNzY0MDEyMjIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laser therapy"
     }
   ]
 }
