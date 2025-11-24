@@ -193,7 +193,7 @@ export default function Home() {
                 </div>
 
                  <div className="flex flex-col sm:flex-row items-center gap-8">
-                     <Image src="/images/c2.png" width={200} height={300} className="rounded-lg shadow-md object-cover" data-ai-hint="doctor portrait"/>
+                     <Image src="/images/c2.png" alt="Portrait of Dr. Fernando Abraham Muñoz" width={200} height={300} className="rounded-lg shadow-md object-cover" data-ai-hint="doctor portrait"/>
                     <div>
                         <h3 className="font-headline text-2xl font-semibold text-primary">Dr. Fernando Abraham Muñoz</h3>
                         <p className="mt-4 text-muted-foreground">Urólogo formado en Medicina por la Universidad La Salle y especializado en Urología por la UNAM. Cuenta con experiencia en cirugía laparoscópica y mínima invasión, endourología, urología oncológica y tratamiento de disfunción eréctil.</p>
@@ -292,7 +292,7 @@ export default function Home() {
            <h2 className="text-center font-headline text-3xl md:text-4xl font-semibold text-primary">Contáctanos</h2>
            <div className="mt-12 grid lg:grid-cols-2 gap-16 items-start">
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="font-headline text-2xl font-semibold text-primary">Dr. Juan Pérez</h3>
+              <h3 className="font-headline text-2xl font-semibold text-primary">Dr. Cristan Basques</h3>
               <p className="mt-2 text-muted-foreground">
                 Urólogo Certificado - Cirugía de Próstata
               </p>
@@ -330,3 +330,4 @@ export default function Home() {
     
 
     
+
