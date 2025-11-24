@@ -130,19 +130,19 @@ export const blogPosts = [
 ];
 
 export const contactInfo = {
-    phone: '+52 55 1234 5678',
+    phone: '56 4002 8714',
     email: 'contacto@urolog.com',
-    address: 'Av. Insurgentes Sur 123, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX',
+    address: 'Av. Patriotismo 579, Cd. de los Deportes, Benito Juárez, 03710 Ciudad de México, CDMX, México',
     location: {
-        lat: 19.419444,
-        lng: -99.16333,
+        lat: 19.383263,
+        lng: -99.183561,
     },
     items: [
         {
             icon: Phone,
             label: 'Teléfono',
-            value: '+52 55 1234 5678',
-            href: 'tel:+525512345678'
+            value: '56 4002 8714',
+            href: 'tel:5640028714'
         },
         {
             icon: Mail,
@@ -153,7 +153,7 @@ export const contactInfo = {
         {
             icon: MapPin,
             label: 'Ubicación',
-            value: 'Av. Insurgentes Sur 123, CDMX',
+            value: 'Av. Patriotismo 579, CDMX',
         }
     ]
 }

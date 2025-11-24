@@ -9,7 +9,7 @@ import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import { navLinks } from '@/lib/data';
+import { navLinks, contactInfo } from '@/lib/data';
 import Logo from '@/components/icons/logo';
 
 export default function Header() {
@@ -18,10 +18,10 @@ export default function Header() {
 
   return (
     <>
-    <div className="bg-background text-primary py-2 text-sm">
+    <div className="bg-background text-primary py-2 text-sm px-4">
         <div className="container flex justify-between items-center">
-            <span>URGencias 24hrs</span>
-            <span>Tel. 55 1234 5678</span>
+            <span>URGENCIAS 24hrs</span>
+            <span>Tel. {contactInfo.phone}</span>
         </div>
     </div>
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">

@@ -3,9 +3,10 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { services, testimonials, blogPosts } from '@/lib/data';
+import { services, testimonials, blogPosts, contactInfo } from '@/lib/data';
 import { ArrowRight, CheckCircle, Hospital, Stethoscope, Users } from 'lucide-react';
 import ContactForm from '@/components/contact-form';
+import Map from '@/components/map';
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
@@ -20,7 +21,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[70vh] md:h-[80vh] w-full">
+      <section id="inicio" className="relative h-[70vh] md:h-[80vh] w-full">
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
@@ -38,7 +39,7 @@ export default function Home() {
               Tratamiento de Próstata Avanzado con Cirugía Urológica
             </h1>
             <p className="mt-4 text-lg md:text-xl">
-              Pague a meses Tasa 0% con TDC desde $44,533.00 MXN
+              Cirugía Láser de próstata desde $39,900
             </p>
             <Button asChild size="lg" className="mt-8 bg-accent hover:bg-accent/90 text-accent-foreground">
               <Link href="/contacto">¡Saber más!</Link>
@@ -87,7 +88,7 @@ export default function Home() {
       </section>
       
       {/* Symptoms Section */}
-      <section className="py-16 lg:py-24 bg-secondary">
+      <section id="sintomas" className="py-16 lg:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
              <div className="max-w-md mx-auto">
@@ -162,7 +163,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-headline font-semibold">¿Si hay solución!</h2>
+            <h2 className="text-3xl font-headline font-semibold">¡Si hay solución!</h2>
             <p className="mt-2 max-w-2xl mx-auto">El crecimiento de próstata y sus síntomas tienen tratamiento. Atiéndete a tiempo y recupera tu calidad de vida. La cirugía de próstata es una opción segura y eficaz.</p>
              <Button asChild size="lg" className="mt-6 bg-accent hover:bg-accent/90 text-accent-foreground">
               <Link href="/contacto">Contáctanos ahora</Link>
@@ -171,7 +172,7 @@ export default function Home() {
       </section>
 
       {/* Urologists Section */}
-      <section className="py-16 lg:py-24 bg-background">
+      <section id="urologos" className="py-16 lg:py-24 bg-background">
         <div className="container mx-auto px-4 text-center">
            <h2 className="font-headline text-3xl md:text-4xl font-semibold text-primary">Urólogos</h2>
            <p className="mt-2 text-muted-foreground">Especialistas en Cirugía de mínima invasión para Rejuvenecimiento</p>
@@ -211,7 +212,7 @@ export default function Home() {
       </section>
 
       {/* Costs Section */}
-      <section className="py-16 lg:py-24 bg-secondary">
+      <section id="costos" className="py-16 lg:py-24 bg-secondary">
         <div className="container mx-auto px-4">
            <div className="text-center mb-12">
              <h2 className="font-headline text-3xl md:text-4xl font-semibold text-primary">Costos de la Cirugía de Próstata</h2>
@@ -221,7 +222,7 @@ export default function Home() {
               <div>
                 <div className="bg-primary text-primary-foreground p-8 rounded-lg text-center shadow-xl">
                     <p className="text-lg">Paquete Todo Incluido desde</p>
-                    <p className="font-headline text-4xl md:text-5xl font-bold my-2">$MXN 44,533.00**</p>
+                    <p className="font-headline text-4xl md:text-5xl font-bold my-2">$39,900 MXN**</p>
                     <p className="text-sm">**Aplica restricciones. Precios sujetos a cambio sin previo aviso.</p>
                 </div>
                 <div className="mt-8">
@@ -270,7 +271,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 lg:py-24 bg-gray-100">
+      <section id="testimonios" className="py-16 lg:py-24 bg-gray-100">
         <div className="container mx-auto px-4">
           <h2 className="text-center font-headline text-3xl md:text-4xl font-semibold text-primary">Testimonios de Pacientes</h2>
           <div className="mt-12 max-w-2xl mx-auto">
@@ -289,7 +290,7 @@ export default function Home() {
       </section>
       
       {/* Contact Section */}
-       <section className="py-16 lg:py-24 bg-secondary">
+       <section id="contacto" className="py-16 lg:py-24 bg-secondary">
          <div className="container mx-auto px-4">
            <h2 className="text-center font-headline text-3xl md:text-4xl font-semibold text-primary">Contáctanos</h2>
            <div className="mt-12 grid lg:grid-cols-2 gap-16 items-start">
@@ -305,24 +306,22 @@ export default function Home() {
             <div>
                <h3 className="font-headline text-2xl font-semibold text-primary">Ubicación y Teléfono</h3>
                <address className="not-italic space-y-4 mt-4 text-muted-foreground">
-                  <p>Av. Insurgentes Sur 123, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX</p>
+                  <p>{contactInfo.address}</p>
                   <p>
-                    <Link href="tel:+525512345678" className="hover:text-primary">
-                      Tel: 55 1234 5678
+                    <Link href={`tel:${contactInfo.phone}`} className="hover:text-primary">
+                      Tel: {contactInfo.phone}
                     </Link>
                   </p>
                    <p>
-                    <Link href="mailto:contacto@urolog.com" className="hover:text-primary">
-                      Email: contacto@urolog.com
+                    <Link href={`mailto:${contactInfo.email}`} className="hover:text-primary">
+                      Email: {contactInfo.email}
                     </Link>
                   </p>
                    <p>Hospital Ángeles Metropolitano, Consultorio 321</p>
                    <p><strong>Horarios:</strong> Lunes a Viernes de 9:00 a 19:00 hrs</p>
                 </address>
                  <div className="mt-4 aspect-video w-full rounded-lg overflow-hidden border shadow-md">
-                   <div className="w-full h-full bg-muted flex items-center justify-center">
-                     <p>Mapa aquí</p>
-                   </div>
+                   <Map position={contactInfo.location} />
                  </div>
             </div>
           </div>
