@@ -15,7 +15,7 @@
     {
       "id": "prostate-growth",
       "description": "Medical illustration of prostate growth (benign prostatic hyperplasia).",
-      "imageUrl": "https://images.unsplash.com/photo-1715111183886-5048b76cc917?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9zdGF0ZSUyMGlsbHVzdHJhdGlvbnxlbnwwfHx8fDE3NjQwMDc3NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1716930138579-f65ba955018f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9zdGF0ZSUyMGlsbHVzdHJhdGlvbnxlbnwwfHx8fDE3NjQwMDc3NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "prostate illustration"
     },
     {
@@ -47,42 +47,6 @@
       "description": "Close up on a doctor's hands during a medical procedure.",
       "imageUrl": "https://images.unsplash.com/photo-1738191360020-e03e1c8914fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwcHJvY2VkdXJlfGVufDB8fHx8MTc2NDAwMTEzOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "medical procedure"
-    },
-    {
-      "id": "facility-1",
-      "description": "A modern clinic waiting room.",
-      "imageUrl": "https://images.unsplash.com/photo-1704455306251-b4634215d98f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbGluaWMlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjM4OTA0MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "clinic interior"
-    },
-    {
-      "id": "facility-2",
-      "description": "A modern clinic consultation room.",
-      "imageUrl": "https://images.unsplash.com/photo-1758691463198-dc663b8a64e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb25zdWx0YXRpb24lMjByb29tfGVufDB8fHx8MTc2NDAwMTEzOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "consultation room"
-    },
-    {
-      "id": "facility-3",
-      "description": "A modern clinic hallway.",
-      "imageUrl": "https://images.unsplash.com/photo-1755190666668-b2d77ca9b16f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjbGluaWMlMjBoYWxsd2F5fGVufDB8fHx8MTc2NDAwMTEzOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "clinic hallway"
-    },
-    {
-      "id": "facility-4",
-      "description": "A detail of a clinic's equipment.",
-      "imageUrl": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZWRpY2FsJTIwZXF1aXBtZW50fGVufDB8fHx8MTc2Mzk0NjM3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "medical equipment"
-    },
-    {
-      "id": "facility-5",
-      "description": "The exterior of a modern clinic building.",
-      "imageUrl": "https://images.unsplash.com/photo-1715310306143-787865a1b538?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjbGluaWMlMjBleHRlcmlvcnxlbnwwfHx8fDE3NjM5MDI3NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "clinic exterior"
-    },
-    {
-      "id": "facility-large",
-      "description": "A wide shot of the clinic's reception area.",
-      "imageUrl": "https://images.unsplash.com/photo-1691090339835-60288a93e1fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjbGluaWMlMjByZWNlcHRpb258ZW58MHx8fHwxNzYzOTk5MTAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "clinic reception"
     }
   ]
 }

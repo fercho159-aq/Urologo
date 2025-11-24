@@ -41,7 +41,7 @@ export default function Home() {
             </h1>
             <div className="mt-6 bg-black/20 p-6 rounded-lg">
               <p className="font-headline text-2xl md:text-3xl font-bold">
-                Paquete Todo Incluido desde $44,500.00 MXN
+                Cirugía Láser de próstata desde $39,900
               </p>
               <p className="mt-2 text-sm">
                 Pago en efectivo, Tarjeta Débito y Transferencia Bancaria. Trabajamos con múltiples aseguradoras.
@@ -332,28 +332,6 @@ export default function Home() {
           </div>
          </div>
        </section>
-
-        {/* Installations Section */}
-      <section className="py-16 lg:py-24 bg-background">
-        <div className="container mx-auto px-4">
-            <h2 className="text-center font-headline text-3xl md:text-4xl font-semibold text-primary">Instalaciones</h2>
-            <p className="mt-2 text-center max-w-3xl mx-auto text-muted-foreground">
-                Le invitamos a conocer nuestras instalaciones de primera. ¡Siéntase cómodo!
-            </p>
-            <div className="mt-12 grid grid-cols-2 md:grid-cols-5 gap-4">
-                {PlaceHolderImages.filter(p => p.id.startsWith('facility-')).map((img) => (
-                    <div key={img.id} className="aspect-square relative rounded-lg overflow-hidden shadow-md">
-                        <Image src={img.imageUrl} alt={img.description} fill className="object-cover" data-ai-hint={img.imageHint} />
-                    </div>
-                ))}
-            </div>
-             <div className="mt-4 relative aspect-video w-full rounded-lg overflow-hidden shadow-md">
-                {PlaceHolderImages.find(p => p.id === 'facility-large') &&
-                    <Image src={PlaceHolderImages.find(p => p.id === 'facility-large')!.imageUrl} alt="Facility large view" fill className="object-cover" data-ai-hint="clinic interior" />
-                }
-            </div>
-        </div>
-      </section>
     </div>
   );
 }
