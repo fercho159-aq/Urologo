@@ -1,3 +1,76 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "A modern and clean operating room.",
+      "imageUrl": "https://images.unsplash.com/photo-1504813184591-01572f98c85f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxvcGVyYXRpbmclMjByb29tfGVufDB8fHx8MTc2NDAwMDc2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "operating room"
+    },
+    {
+      "id": "doctor-portrait",
+      "description": "A friendly and professional doctor.",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM5NzczNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor portrait"
+    },
+    {
+      "id": "service-resection",
+      "description": "Illustration of transurethral resection of the prostate.",
+      "imageUrl": "https://images.unsplash.com/photo-1763198302194-86616d1cc75a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtZWRpY2FsJTIwaWxsdXN0cmF0aW9ufGVufDB8fHx8MTc2MzkxNjA3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical illustration"
+    },
+    {
+      "id": "service-prostatectomy",
+      "description": "Illustration of a radical prostatectomy procedure.",
+      "imageUrl": "https://images.unsplash.com/photo-1758204054779-72eb0cdfd732?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdXJnaWNhbCUyMHByb2NlZHVyZXxlbnwwfHx8fDE3NjQwMDA3NjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "surgical procedure"
+    },
+    {
+      "id": "service-greenlight",
+      "description": "Concept image for Greenlight laser therapy.",
+      "imageUrl": "https://images.unsplash.com/photo-1754941622117-97957c5d669b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsYXNlciUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzY0MDAwNzYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laser technology"
+    },
+    {
+      "id": "testimonial-patient-1",
+      "description": "Portrait of a smiling senior man.",
+      "imageUrl": "https://images.unsplash.com/photo-1691275444359-8250616b7240?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzZW5pb3IlMjBtYW58ZW58MHx8fHwxNzYzOTc1NzgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "senior man"
+    },
+    {
+      "id": "testimonial-patient-2",
+      "description": "Portrait of a happy middle-aged man.",
+      "imageUrl": "https://images.unsplash.com/photo-1537511446984-935f663eb1f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYXBweSUyMG1hbnxlbnwwfHx8fDE3NjM5ODkzNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy man"
+    },
+    {
+      "id": "testimonial-patient-3",
+      "description": "Portrait of a relieved older gentleman.",
+      "imageUrl": "https://picsum.photos/seed/patient3/100/100",
+      "imageHint": "relieved man"
+    },
+    {
+      "id": "contact-header",
+      "description": "A welcoming front desk of a modern clinic.",
+      "imageUrl": "https://images.unsplash.com/photo-1631507623095-c710d184498f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjbGluaWMlMjByZWNlcHRpb258ZW58MHx8fHwxNzYzOTk5MTAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clinic reception"
+    },
+    {
+      "id": "blog-pre-surgery",
+      "description": "A patient talking to a doctor before a procedure.",
+      "imageUrl": "https://images.unsplash.com/photo-1638202993928-7267aad84c31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkb2N0b3IlMjBjb25zdWx0YXRpb258ZW58MHx8fHwxNzYzOTc1MDMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor consultation"
+    },
+    {
+      "id": "blog-post-care",
+      "description": "A person relaxing at home in a comfortable chair.",
+      "imageUrl": "https://images.unsplash.com/photo-1749566788007-5ccdb2e86827?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob21lJTIwcmVjb3Zlcnl8ZW58MHx8fHwxNzY0MDAwNzYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "home recovery"
+    },
+    {
+      "id": "blog-types-surgery",
+      "description": "A collection of surgical tools neatly arranged.",
+      "imageUrl": "https://images.unsplash.com/photo-1560269941-141b145a1b57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdXJnaWNhbCUyMGluc3RydW1lbnRzfGVufDB8fHx8MTc2NDAwMDc2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "surgical instruments"
+    }
+  ]
 }
