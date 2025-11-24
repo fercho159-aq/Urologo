@@ -14,8 +14,8 @@ const TiktokIcon = () => (
 export default function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground border-t">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
           <div className="space-y-4">
             <Logo className="text-primary-foreground" />
             <p className="text-sm">Cuidado urológico de excelencia con un enfoque humano.</p>
