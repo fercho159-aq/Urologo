@@ -36,7 +36,7 @@ export default function Home() {
                 Cirugía Láser de próstata desde $39,900
               </p>
               <p className="mt-2 text-sm">
-                Pago en efectivo, Tarjeta Débito y Transferencia Bancaria. Trabajamos con múltiples aseguradoras.
+                Alivia los síntomas del crecimiento prostático y mejora tu calidad de vida con un procedimiento quirúrgico realizado con EQUIPO LÁSER DE ÚLTIMA GENERACIÓN, que es mínimamente invasivo, seguro y efectivo, sin impotencia sexual y sin incontinencia urinaria.
               </p>
             </div>
             <Button asChild size="lg" className="mt-8 bg-accent hover:bg-accent/90 text-accent-foreground">
