@@ -15,7 +15,7 @@
     {
       "id": "prostate-growth",
       "description": "Medical illustration of prostate growth (benign prostatic hyperplasia).",
-      "imageUrl": "https://images.unsplash.com/photo-1716930138579-f65ba955018f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9zdGF0ZSUyMGlsbHVzdHJhdGlvbnxlbnwwfHx8fDE3NjQwMDc3NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://storage.googleapis.com/studioprompt/prostate-growth.png",
       "imageHint": "prostate illustration"
     },
     {
@@ -33,8 +33,8 @@
     {
       "id": "doctor-1",
       "description": "Portrait of Dr. Juan Pérez Martínez.",
-      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM5NzczNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "doctor portrait"
+      "imageUrl": "https://storage.googleapis.com/studioprompt/e8c8942b-e102-45e3-96b4-6a84c98cc332.jpeg",
+      "imageHint": "doctor presentation"
     },
     {
       "id": "doctor-2",
