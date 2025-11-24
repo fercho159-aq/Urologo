@@ -176,7 +176,7 @@ export default function Home() {
 
            <div className="mt-12 grid md:grid-cols-2 gap-16 items-center text-left">
                 <div className="flex flex-col sm:flex-row items-center gap-8">
-                    <Image src="/images/a1.jpeg" alt="Portrait of Dr. Cristan Basques." width={200} height={300} className="rounded-lg shadow-md object-cover" data-ai-hint="doctor presentation" />
+                    <Image src="/images/c3.png" alt="Portrait of Dr. Cristan Basques." width={200} height={300} className="rounded-lg shadow-md object-cover" data-ai-hint="doctor presentation" />
                     <div>
                         <h3 className="font-headline text-2xl font-semibold text-primary">Dr. Cristan Basques</h3>
                          <ul className="mt-4 space-y-2 text-muted-foreground list-disc list-inside">
@@ -314,7 +314,6 @@ export default function Home() {
                       Email: {contactInfo.email}
                     </Link>
                   </p>
-                   <p>Hospital Ángeles Metropolitano, Consultorio 321</p>
                    <p><strong>Horarios:</strong> Lunes a Viernes de 9:00 a 19:00 hrs</p>
                 </address>
                  <div className="mt-4 aspect-video w-full rounded-lg overflow-hidden border shadow-md">
