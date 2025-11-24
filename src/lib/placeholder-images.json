@@ -15,7 +15,7 @@
     {
       "id": "prostate-growth",
       "description": "Medical illustration of prostate growth (benign prostatic hyperplasia).",
-      "imageUrl": "https://storage.googleapis.com/studioprompt/prostate-growth.png",
+      "imageUrl": "https://images.unsplash.com/photo-1715111183886-5048b76cc917?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9zdGF0ZSUyMGlsbHVzdHJhdGlvbnxlbnwwfHx8fDE3NjQwMDc3NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "prostate illustration"
     },
     {
