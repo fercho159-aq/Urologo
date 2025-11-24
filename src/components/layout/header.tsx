@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <>
-    <div className="bg-primary text-primary-foreground py-2 text-sm">
+    <div className="bg-background text-primary py-2 text-sm">
         <div className="container flex justify-between items-center">
             <span>URGencias 24hrs</span>
             <span>Tel. 55 1234 5678</span>
