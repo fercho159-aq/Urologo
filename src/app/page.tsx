@@ -88,7 +88,7 @@ export default function Home() {
       <section id="sintomas" className="py-16 lg:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="max-w-md mx-auto order-1">
+            <div className="max-w-md mx-auto order-1 md:order-1">
               
                  <Image
                     src="https://images.unsplash.com/photo-1758687127128-9535de50a3e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYW4lMjBkaXNjb21mb3J0fGVufDB8fHx8MTc2NDAwMTEzOHww&ixlib=rb-4.1.0&q=80&w=1080"
@@ -100,7 +100,7 @@ export default function Home() {
                 />
               
             </div>
-            <div className="order-2">
+            <div className="order-2 md:order-2">
               <h2 className="font-headline text-3xl md:text-4xl font-semibold text-primary">
                 Síntomas
               </h2>
@@ -123,22 +123,10 @@ export default function Home() {
       </section>
 
        {/* Complications Section */}
-      <section className="py-16 lg:py-24 bg-secondary">
+      <section className="py-16 lg:py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="max-w-md mx-auto order-2 md:order-1">
-              
-                 <Image
-                    src="https://images.unsplash.com/photo-1620939068789-fc0c88ddb71e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiYWNrJTIwcGFpbnxlbnwwfHx8fDE3NjQwMDExMzh8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                    alt="A person with back pain, sitting on a sofa."
-                    width={400}
-                    height={400}
-                    className="rounded-lg shadow-lg object-cover"
-                    data-ai-hint="back pain"
-                />
-              
-            </div>
-            <div className="order-1 md:order-2">
+             <div className="order-2 md:order-2">
               <h2 className="font-headline text-3xl md:text-4xl font-semibold text-primary">
                 Complicaciones
               </h2>
@@ -152,6 +140,18 @@ export default function Home() {
                 <li className="border-b pb-2 text-muted-foreground">Daño a los riñones</li>
                 <li className="border-b pb-2 text-muted-foreground">Retención urinaria aguda</li>
               </ul>
+            </div>
+            <div className="max-w-md mx-auto order-1 md:order-1">
+              
+                 <Image
+                    src="https://images.unsplash.com/photo-1620939068789-fc0c88ddb71e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiYWNrJTIwcGFpbnxlbnwwfHx8fDE3NjQwMDExMzh8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                    alt="A person with back pain, sitting on a sofa."
+                    width={400}
+                    height={400}
+                    className="rounded-lg shadow-lg object-cover"
+                    data-ai-hint="back pain"
+                />
+              
             </div>
           </div>
         </div>
@@ -196,11 +196,9 @@ export default function Home() {
                      <Image src="/images/c2.png" width={200} height={300} className="rounded-lg shadow-md object-cover" data-ai-hint="doctor portrait"/>
                     <div>
                         <h3 className="font-headline text-2xl font-semibold text-primary">Dr. Carlos López</h3>
-                         <ul className="mt-4 space-y-2 text-muted-foreground list-disc list-inside">
-                            <li>Especialista en Urología Oncológica.</li>
-                            <li>Entrenamiento en cirugía láser de próstata en el extranjero.</li>
-                            <li>Profesor de Urología en la Universidad Nacional.</li>
-                        </ul>
+                        <p className="mt-4 text-muted-foreground">Urólogo formado en Medicina por la Universidad La Salle y especializado en Urología por la UNAM. Cuenta con experiencia en cirugía laparoscópica y mínima invasión, endourología, urología oncológica y tratamiento de disfunción eréctil.</p>
+                        <p className="mt-2 text-muted-foreground">Ha realizado entrenamiento nacional e internacional en cirugía láser de próstata, lo que respalda su práctica con técnicas modernas y seguras.</p>
+                        <p className="mt-2 text-muted-foreground">Ofrece atención basada en honestidad, ética y calidez humana. Es miembro de la SMU, AUA, EAU y CAU.</p>
                          <Button asChild variant="outline" className="mt-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                             <Link href="/contacto">Agendar Cita</Link>
                         </Button>
@@ -329,5 +327,7 @@ export default function Home() {
     </div>
   );
 }
+
+    
 
     
