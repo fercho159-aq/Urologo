@@ -7,8 +7,8 @@ import Footer from '@/components/layout/footer';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Clínica de Cirugía de Próstata - Expertos en Urología en CDMX',
-    template: '%s | Cirugía de Próstata Clínica',
+    default: 'Urolog - Especialistas en Cirugía de Próstata en CDMX',
+    template: '%s | Urolog - Cirugía de Próstata',
   },
   description:
     'Clínica líder en México especializada en cirugía de próstata. Ofrecemos tratamientos avanzados, diagnósticos precisos y cuidado postoperatorio. Agende su cita con nuestros urólogos expertos.',
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning className="!scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

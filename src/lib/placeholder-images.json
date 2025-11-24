@@ -2,75 +2,87 @@
   "placeholderImages": [
     {
       "id": "hero-image",
-      "description": "A modern and clean operating room.",
-      "imageUrl": "https://images.unsplash.com/photo-1504813184591-01572f98c85f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxvcGVyYXRpbmclMjByb29tfGVufDB8fHx8MTc2NDAwMDc2MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "operating room"
-    },
-    {
-      "id": "doctor-portrait",
-      "description": "A friendly and professional doctor.",
-      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM5NzczNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "doctor portrait"
-    },
-    {
-      "id": "service-resection",
-      "description": "Illustration of transurethral resection of the prostate.",
-      "imageUrl": "https://images.unsplash.com/photo-1763198302194-86616d1cc75a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtZWRpY2FsJTIwaWxsdXN0cmF0aW9ufGVufDB8fHx8MTc2MzkxNjA3MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "medical illustration"
-    },
-    {
-      "id": "service-prostatectomy",
-      "description": "Illustration of a radical prostatectomy procedure.",
-      "imageUrl": "https://images.unsplash.com/photo-1758204054779-72eb0cdfd732?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdXJnaWNhbCUyMHByb2NlZHVyZXxlbnwwfHx8fDE3NjQwMDA3NjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "surgical procedure"
-    },
-    {
-      "id": "service-greenlight",
-      "description": "Concept image for Greenlight laser therapy.",
-      "imageUrl": "https://images.unsplash.com/photo-1754941622117-97957c5d669b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsYXNlciUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzY0MDAwNzYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "laser technology"
-    },
-    {
-      "id": "testimonial-patient-1",
-      "description": "Portrait of a smiling senior man.",
+      "description": "An older man looking thoughtfully.",
       "imageUrl": "https://images.unsplash.com/photo-1691275444359-8250616b7240?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzZW5pb3IlMjBtYW58ZW58MHx8fHwxNzYzOTc1NzgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "senior man"
     },
     {
-      "id": "testimonial-patient-2",
-      "description": "Portrait of a happy middle-aged man.",
-      "imageUrl": "https://images.unsplash.com/photo-1537511446984-935f663eb1f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYXBweSUyMG1hbnxlbnwwfHx8fDE3NjM5ODkzNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "happy man"
+      "id": "doctor-portrait",
+      "description": "A friendly and professional doctor.",
+      "imageUrl": "https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkb2N0b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM5NzczNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor portrait"
     },
     {
-      "id": "testimonial-patient-3",
-      "description": "Portrait of a relieved older gentleman.",
-      "imageUrl": "https://picsum.photos/seed/patient3/100/100",
-      "imageHint": "relieved man"
+      "id": "prostate-growth",
+      "description": "Medical illustration of prostate growth (benign prostatic hyperplasia).",
+      "imageUrl": "https://storage.googleapis.com/studioprompt/prostate-growth.png",
+      "imageHint": "prostate illustration"
     },
     {
-      "id": "contact-header",
-      "description": "A welcoming front desk of a modern clinic.",
-      "imageUrl": "https://images.unsplash.com/photo-1631507623095-c710d184498f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjbGluaWMlMjByZWNlcHRpb258ZW58MHx8fHwxNzYzOTk5MTAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "id": "symptoms-image",
+      "description": "A man holding his lower abdomen in discomfort.",
+      "imageUrl": "https://images.unsplash.com/photo-1758687127128-9535de50a3e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYW4lMjBkaXNjb21mb3J0fGVufDB8fHx8MTc2NDAwMTEzOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man discomfort"
+    },
+    {
+      "id": "complications-image",
+      "description": "A person with back pain, sitting on a sofa.",
+      "imageUrl": "https://images.unsplash.com/photo-1620939068789-fc0c88ddb71e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiYWNrJTIwcGFpbnxlbnwwfHx8fDE3NjQwMDExMzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "back pain"
+    },
+    {
+      "id": "doctor-1",
+      "description": "Portrait of Dr. Juan Pérez Martínez.",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM5NzczNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor portrait"
+    },
+    {
+      "id": "doctor-2",
+      "description": "Portrait of Dr. Carlos López.",
+      "imageUrl": "https://images.unsplash.com/photo-1550831107-1553da8c8464?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkb2N0b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM5NzczNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "doctor portrait"
+    },
+    {
+      "id": "costs-image",
+      "description": "Close up on a doctor's hands during a medical procedure.",
+      "imageUrl": "https://images.unsplash.com/photo-1738191360020-e03e1c8914fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwcHJvY2VkdXJlfGVufDB8fHx8MTc2NDAwMTEzOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical procedure"
+    },
+    {
+      "id": "facility-1",
+      "description": "A modern clinic waiting room.",
+      "imageUrl": "https://images.unsplash.com/photo-1704455306251-b4634215d98f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbGluaWMlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjM4OTA0MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clinic interior"
+    },
+    {
+      "id": "facility-2",
+      "description": "A modern clinic consultation room.",
+      "imageUrl": "https://images.unsplash.com/photo-1758691463198-dc663b8a64e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb25zdWx0YXRpb24lMjByb29tfGVufDB8fHx8MTc2NDAwMTEzOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "consultation room"
+    },
+    {
+      "id": "facility-3",
+      "description": "A modern clinic hallway.",
+      "imageUrl": "https://images.unsplash.com/photo-1755190666668-b2d77ca9b16f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjbGluaWMlMjBoYWxsd2F5fGVufDB8fHx8MTc2NDAwMTEzOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clinic hallway"
+    },
+    {
+      "id": "facility-4",
+      "description": "A detail of a clinic's equipment.",
+      "imageUrl": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZWRpY2FsJTIwZXF1aXBtZW50fGVufDB8fHx8MTc2Mzk0NjM3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical equipment"
+    },
+    {
+      "id": "facility-5",
+      "description": "The exterior of a modern clinic building.",
+      "imageUrl": "https://images.unsplash.com/photo-1715310306143-787865a1b538?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjbGluaWMlMjBleHRlcmlvcnxlbnwwfHx8fDE3NjM5MDI3NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clinic exterior"
+    },
+    {
+      "id": "facility-large",
+      "description": "A wide shot of the clinic's reception area.",
+      "imageUrl": "https://images.unsplash.com/photo-1691090339835-60288a93e1fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjbGluaWMlMjByZWNlcHRpb258ZW58MHx8fHwxNzYzOTk5MTAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "clinic reception"
-    },
-    {
-      "id": "blog-pre-surgery",
-      "description": "A patient talking to a doctor before a procedure.",
-      "imageUrl": "https://images.unsplash.com/photo-1638202993928-7267aad84c31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkb2N0b3IlMjBjb25zdWx0YXRpb258ZW58MHx8fHwxNzYzOTc1MDMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "doctor consultation"
-    },
-    {
-      "id": "blog-post-care",
-      "description": "A person relaxing at home in a comfortable chair.",
-      "imageUrl": "https://images.unsplash.com/photo-1749566788007-5ccdb2e86827?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob21lJTIwcmVjb3Zlcnl8ZW58MHx8fHwxNzY0MDAwNzYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "home recovery"
-    },
-    {
-      "id": "blog-types-surgery",
-      "description": "A collection of surgical tools neatly arranged.",
-      "imageUrl": "https://images.unsplash.com/photo-1560269941-141b145a1b57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdXJnaWNhbCUyMGluc3RydW1lbnRzfGVufDB8fHx8MTc2NDAwMDc2MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "surgical instruments"
     }
   ]
 }

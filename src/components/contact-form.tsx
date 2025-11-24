@@ -17,12 +17,14 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { useState } from 'react';
+import { Checkbox } from './ui/checkbox';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'El nombre debe tener al menos 2 caracteres.' }),
   email: z.string().email({ message: 'Por favor, ingrese un correo electrónico válido.' }),
-  phone: z.string().optional(),
+  phone: z.string().min(10, { message: 'Por favor, ingrese un teléfono válido.' }),
   message: z.string().min(10, { message: 'El mensaje debe tener al menos 10 caracteres.' }),
+  privacy: z.boolean().refine(val => val === true, {message: "Debe aceptar la política de privacidad."})
 });
 
 export default function ContactForm() {
@@ -36,6 +38,7 @@ export default function ContactForm() {
       email: '',
       phone: '',
       message: '',
+      privacy: false,
     },
   });
 
@@ -55,29 +58,27 @@ export default function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
         <FormField
           control={form.control}
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Nombre Completo</FormLabel>
               <FormControl>
-                <Input placeholder="Ej. Juan Pérez" {...field} />
+                <Input placeholder="Nombre Completo" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-4">
             <FormField
             control={form.control}
             name="email"
             render={({ field }) => (
                 <FormItem>
-                <FormLabel>Correo Electrónico</FormLabel>
                 <FormControl>
-                    <Input placeholder="Ej. juan.perez@email.com" {...field} />
+                    <Input placeholder="Correo Electrónico" {...field} />
                 </FormControl>
                 <FormMessage />
                 </FormItem>
@@ -88,9 +89,8 @@ export default function ContactForm() {
             name="phone"
             render={({ field }) => (
                 <FormItem>
-                <FormLabel>Teléfono (Opcional)</FormLabel>
                 <FormControl>
-                    <Input placeholder="Ej. 55 1234 5678" {...field} />
+                    <Input placeholder="Teléfono" {...field} />
                 </FormControl>
                 <FormMessage />
                 </FormItem>
@@ -102,11 +102,10 @@ export default function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Mensaje</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Escriba su mensaje o motivo de consulta aquí..."
-                  className="min-h-[120px]"
+                  placeholder="Mensaje"
+                  className="min-h-[100px]"
                   {...field}
                 />
               </FormControl>
@@ -114,8 +113,26 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full" disabled={isLoading}>
-            {isLoading ? 'Enviando...' : 'Enviar Mensaje'}
+        <FormField
+            control={form.control}
+            name="privacy"
+            render={({ field }) => (
+                <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+                    <FormControl>
+                        <Checkbox checked={field.value} onCheckedChange={field.onChange} />
+                    </FormControl>
+                    <div className="space-y-1 leading-none">
+                        <FormLabel className="text-xs text-muted-foreground">
+                            He leído y acepto la política de privacidad.
+                        </FormLabel>
+                        <FormMessage />
+                    </div>
+                </FormItem>
+            )}
+        />
+
+        <Button type="submit" className="w-full bg-primary hover:bg-primary/90" disabled={isLoading}>
+            {isLoading ? 'Enviando...' : 'Enviar'}
         </Button>
       </form>
     </Form>

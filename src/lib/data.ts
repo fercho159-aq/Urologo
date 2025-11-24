@@ -1,12 +1,12 @@
 import { CalendarCheck, Hospital, Stethoscope, Users, MapPin, Phone, Mail } from 'lucide-react';
 
 export const navLinks = [
-  { href: '/', label: 'Inicio' },
-  { href: '/servicios', label: 'Servicios' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/testimonios', label: 'Testimonios' },
-  { href: '/faq', label: 'Preguntas Frecuentes' },
-  { href: '/contacto', label: 'Contacto' },
+  { href: '#inicio', label: 'Inicio' },
+  { href: '#sintomas', label: 'Síntomas' },
+  { href: '#urologos', label: 'Urólogos' },
+  { href: '#costos', label: 'Costos' },
+  { href: '#testimonios', label: 'Testimonios' },
+  { href: '#contacto', label: 'Contacto' },
 ];
 
 export const services = [
@@ -131,7 +131,7 @@ export const blogPosts = [
 
 export const contactInfo = {
     phone: '+52 55 1234 5678',
-    email: 'contacto@cirugiadeprostata.info',
+    email: 'contacto@urolog.com',
     address: 'Av. Insurgentes Sur 123, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX',
     location: {
         lat: 19.419444,
@@ -147,8 +147,8 @@ export const contactInfo = {
         {
             icon: Mail,
             label: 'Correo Electrónico',
-            value: 'contacto@cirugiadeprostata.info',
-            href: 'mailto:contacto@cirugiadeprostata.info'
+            value: 'contacto@urolog.com',
+            href: 'mailto:contacto@urolog.com'
         },
         {
             icon: MapPin,
