@@ -26,13 +26,13 @@ export default function Header() {
     </div>
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 items-center px-4">
-        <div className="mr-4 hidden md:flex">
-          <Link href="/" className="mr-6">
+        <div className="mr-4 flex">
+          <Link href="/" className="mr-6 flex items-center">
             <Logo />
           </Link>
         </div>
 
-        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+        <div className="flex flex-1 items-center justify-end space-x-2">
            {/* Mobile Menu */}
             <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild>
@@ -65,10 +65,10 @@ export default function Header() {
             </SheetContent>
             </Sheet>
 
-            <div className="w-full flex-1 md:w-auto md:flex-none">
-                <div className="flex justify-center md:hidden">
+            <div className="w-full flex-1 md:w-auto md:flex-none md:hidden">
+                <div className="flex justify-center">
                     <Link href="/">
-                        <Logo />
+                        <Logo className="h-14 w-auto" />
                     </Link>
                 </div>
             </div>
