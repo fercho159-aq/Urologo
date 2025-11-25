@@ -7,8 +7,8 @@ export default function Logo({ className, ...props }: { className?: string }) {
       <Image 
         src="/images/logo.png" 
         alt="Urolog Logo" 
-        width={150}
-        height={70}
+        width={80}
+        height={10}
         className="object-contain"
       />
     </div>
