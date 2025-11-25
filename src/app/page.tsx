@@ -17,7 +17,7 @@ export default function Home() {
       <section id="inicio" className="relative h-auto lg:h-[80vh] w-full py-16 lg:py-0">
         
           <Image
-            src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtZWRpY2FsJTIwdGVhbXxlbnwwfHx8fDE3NjM5MjYxNTl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+            src="/images/d2.png"
             alt="An older man looking thoughtfully."
             fill
             className="object-cover"
@@ -71,7 +71,7 @@ export default function Home() {
             <div className="max-w-md mx-auto">
               
                  <Image
-                    src="https://images.unsplash.com/photo-1579684453423-f84349369665?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtZWRpY2FsJTIwaWxsdXN0cmF0aW9ufGVufDB8fHx8MTc2NDAxMjgwMHww&ixlib=rb-4.1.0&q=80&w=1080"
+                    src="/images/e1.png"
                     alt="Medical illustration of prostate growth (benign prostatic hyperplasia)."
                     width={500}
                     height={400}
