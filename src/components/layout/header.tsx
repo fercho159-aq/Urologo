@@ -25,55 +25,14 @@ export default function Header() {
         </div>
     </div>
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center px-4">
-        <div className="mr-4 flex">
-          <Link href="/" className="mr-6 flex items-center">
+      <div className="container flex h-20 items-center px-4 justify-between">
+        <div className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Logo />
           </Link>
         </div>
 
-        <div className="flex flex-1 items-center justify-end space-x-2">
-           {/* Mobile Menu */}
-            <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-            <SheetTrigger asChild>
-                <Button variant="ghost" className="md:hidden">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Open menu</span>
-                </Button>
-            </SheetTrigger>
-            <SheetContent side="left">
-                <div className="p-4">
-                <Link href="/" className="mb-8 block" onClick={() => setMobileMenuOpen(false)}>
-                    <Logo />
-                </Link>
-                <nav className="flex flex-col space-y-4">
-                    {navLinks.map((link) => (
-                    <Link
-                        key={link.href}
-                        href={link.href}
-                        onClick={() => setMobileMenuOpen(false)}
-                        className={cn(
-                        'text-lg font-medium transition-colors hover:text-primary',
-                        pathname === link.href ? 'text-primary' : 'text-foreground/80'
-                        )}
-                    >
-                        {link.label}
-                    </Link>
-                    ))}
-                </nav>
-                </div>
-            </SheetContent>
-            </Sheet>
-
-            <div className="w-full flex-1 md:w-auto md:flex-none md:hidden">
-                <div className="flex justify-center">
-                    <Link href="/">
-                        <Logo className="h-14 w-auto" />
-                    </Link>
-                </div>
-            </div>
-        
-          <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -86,8 +45,39 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-          </nav>
-        </div>
+        </nav>
+
+        {/* Mobile Menu */}
+        <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+        <SheetTrigger asChild>
+            <Button variant="ghost" className="md:hidden">
+            <Menu className="h-6 w-6" />
+            <span className="sr-only">Open menu</span>
+            </Button>
+        </SheetTrigger>
+        <SheetContent side="left">
+            <div className="p-4">
+            <Link href="/" className="mb-8 block" onClick={() => setMobileMenuOpen(false)}>
+                <Logo />
+            </Link>
+            <nav className="flex flex-col space-y-4">
+                {navLinks.map((link) => (
+                <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={cn(
+                    'text-lg font-medium transition-colors hover:text-primary',
+                    pathname === link.href ? 'text-primary' : 'text-foreground/80'
+                    )}
+                >
+                    {link.label}
+                </Link>
+                ))}
+            </nav>
+            </div>
+        </SheetContent>
+        </Sheet>
       </div>
     </header>
     </>
